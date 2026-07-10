@@ -1,0 +1,40 @@
+name: Publish to npm
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Publish if version bumped
+        run: |
+          LOCAL_VER=$(node -p "require('./package.json').version")
+          NPM_VER=$(npm view @skalfa/skalfa-icon version 2>/dev/null || echo "0.0.0")
+          if [ "$LOCAL_VER" != "$NPM_VER" ]; then
+            echo "Publishing @skalfa/skalfa-icon $LOCAL_VER (Registry version: $NPM_VER)"
+            bun install
+            npm run build
+            npm publish --access public
+          else
+            echo "@skalfa/skalfa-icon is up to date ($LOCAL_VER)"
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
