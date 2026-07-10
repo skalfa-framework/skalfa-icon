@@ -141,7 +141,6 @@ function generate() {
   }
 
   if (svgFilesMap.size === 0) {
-    console.warn("⚠ No SVG files found in any icons/ folder");
     return;
   }
 
