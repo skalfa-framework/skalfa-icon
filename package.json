@@ -1,6 +1,6 @@
 {
   "name": "@skalfa/skalfa-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom SVG icon components for the Skalfa ecosystem. Upload SVG files and generate type-safe React icon components.",
   "keywords": ["skalfa", "skalfa-icon", "svg", "icon", "react"],
   "license": "MIT",
