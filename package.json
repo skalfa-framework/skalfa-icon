@@ -1,6 +1,6 @@
 {
   "name": "@skalfa/skalfa-icon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom SVG icon components for the Skalfa ecosystem. Upload SVG files and generate type-safe React icon components.",
   "keywords": ["skalfa", "skalfa-icon", "svg", "icon", "react"],
   "license": "MIT",
@@ -9,7 +9,7 @@
   "bin": {
     "skalfa-icon": "./scripts/generate.ts"
   },
-  "files": ["dist", "src"],
+  "files": ["dist", "src", "icons", "tsconfig.json", "tsconfig.build.json"],
   "scripts": {
     "generate": "bun run scripts/generate.ts",
     "build": "bun run generate && tsc -p tsconfig.build.json",

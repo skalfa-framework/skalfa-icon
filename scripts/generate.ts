@@ -210,6 +210,53 @@ export type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 
   // Auto-compile the package so it's instantly ready to use in the parent project
   try {
+    const tsconfigPath = join(ROOT, "tsconfig.json");
+    const tsconfigBuildPath = join(ROOT, "tsconfig.build.json");
+
+    if (!existsSync(tsconfigPath)) {
+      writeFileSync(
+        tsconfigPath,
+        JSON.stringify(
+          {
+            compilerOptions: {
+              target: "ES2021",
+              module: "ES2022",
+              moduleResolution: "bundler",
+              declaration: true,
+              sourceMap: true,
+              outDir: "./dist",
+              rootDir: "./src",
+              strict: true,
+              esModuleInterop: true,
+              types: ["node"],
+              skipLibCheck: true,
+              forceConsistentCasingInFileNames: true,
+              jsx: "react-jsx",
+            },
+            include: ["./src/**/*"],
+          },
+          null,
+          2
+        )
+      );
+    }
+
+    if (!existsSync(tsconfigBuildPath)) {
+      writeFileSync(
+        tsconfigBuildPath,
+        JSON.stringify(
+          {
+            extends: "./tsconfig.json",
+            compilerOptions: {
+              paths: {},
+            },
+          },
+          null,
+          2
+        )
+      );
+    }
+
     const isWin = process.platform === "win32";
     const tscBinName = isWin ? "tsc.cmd" : "tsc";
     const tscBin = join(ROOT, "node_modules", ".bin", tscBinName);
