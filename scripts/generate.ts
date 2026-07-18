@@ -70,7 +70,6 @@ function processSvg(raw: string): string {
   svg = svg.replace(/(<svg[^>]*?)\s+width="[^"]*"/i, "$1");
   svg = svg.replace(/(<svg[^>]*?)\s+height="[^"]*"/i, "$1");
 
-  // Convert SVG attributes to JSX camelCase
   svg = svg.replace(/stroke-width=/g, "strokeWidth=");
   svg = svg.replace(/stroke-linecap=/g, "strokeLinecap=");
   svg = svg.replace(/stroke-linejoin=/g, "strokeLinejoin=");
@@ -82,6 +81,7 @@ function processSvg(raw: string): string {
   svg = svg.replace(/stroke-miterlimit=/g, "strokeMiterlimit=");
   svg = svg.replace(/stroke-opacity=/g, "strokeOpacity=");
   svg = svg.replace(/fill-opacity=/g, "fillOpacity=");
+  svg = svg.replace(/\bclass=/g, "className=");
 
   // Inject {...props} into root <svg> tag (before the closing >)
   svg = svg.replace(/<svg([^>]*)>/, '<svg$1 {...props}>');
