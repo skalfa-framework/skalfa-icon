@@ -6,31 +6,56 @@ import { BrandsGithubIcon } from "./icons/BrandsGithub";
 import { BrandsInstagramIcon } from "./icons/BrandsInstagram";
 import { BrandsLinkedinIcon } from "./icons/BrandsLinkedin";
 import { BrandsNpmIcon } from "./icons/BrandsNpm";
+import { OutlineBookmarkIcon } from "./icons/OutlineBookmark";
+import { OutlineCartIcon } from "./icons/OutlineCart";
+import { OutlineMinusCircleIcon } from "./icons/OutlineMinusCircle";
+import { OutlinePlusCircleIcon } from "./icons/OutlinePlusCircle";
+import { OutlineStoreIcon } from "./icons/OutlineStore";
+import { OutlineTruckIcon } from "./icons/OutlineTruck";
+import { OutlineWarehouseIcon } from "./icons/OutlineWarehouse";
 import { SolidArrowDownZAIcon } from "./icons/SolidArrowDownZA";
 import { SolidArrowLeftIcon } from "./icons/SolidArrowLeft";
 import { SolidArrowRightLongIcon } from "./icons/SolidArrowRightLong";
 import { SolidArrowRightIcon } from "./icons/SolidArrowRight";
 import { SolidArrowUpAZIcon } from "./icons/SolidArrowUpAZ";
+import { SolidBanIcon } from "./icons/SolidBan";
 import { SolidBarsIcon } from "./icons/SolidBars";
 import { SolidBellIcon } from "./icons/SolidBell";
 import { SolidBookmarkIcon } from "./icons/SolidBookmark";
 import { SolidBoxArchiveIcon } from "./icons/SolidBoxArchive";
+import { SolidBoxDownIcon } from "./icons/SolidBoxDown";
+import { SolidBoxUpIcon } from "./icons/SolidBoxUp";
+import { SolidBoxesIcon } from "./icons/SolidBoxes";
+import { SolidCalendarDotsIcon } from "./icons/SolidCalendarDots";
+import { SolidCalendarIcon } from "./icons/SolidCalendar";
+import { SolidCartIcon } from "./icons/SolidCart";
+import { SolidCashierIcon } from "./icons/SolidCashier";
+import { SolidCcIcon } from "./icons/SolidCc";
+import { SolidChartIcon } from "./icons/SolidChart";
+import { SolidChartdIcon } from "./icons/SolidChartd";
+import { SolidChartpIcon } from "./icons/SolidChartp";
 import { SolidCheckIcon } from "./icons/SolidCheck";
+import { SolidChecksIcon } from "./icons/SolidChecks";
 import { SolidChevronDownIcon } from "./icons/SolidChevronDown";
 import { SolidChevronLeftIcon } from "./icons/SolidChevronLeft";
 import { SolidChevronRightIcon } from "./icons/SolidChevronRight";
 import { SolidChevronUpIcon } from "./icons/SolidChevronUp";
+import { SolidClipboardCheckIcon } from "./icons/SolidClipboardCheck";
 import { SolidClipboardIcon } from "./icons/SolidClipboard";
 import { SolidCogIcon } from "./icons/SolidCog";
 import { SolidCopyIcon } from "./icons/SolidCopy";
 import { SolidCrosshairsIcon } from "./icons/SolidCrosshairs";
 import { SolidDollarIcon } from "./icons/SolidDollar";
+import { SolidDotsIcon } from "./icons/SolidDots";
+import { SolidDotsvIcon } from "./icons/SolidDotsv";
 import { SolidEditIcon } from "./icons/SolidEdit";
 import { SolidEllipsisHIcon } from "./icons/SolidEllipsisH";
 import { SolidEllipsisVIcon } from "./icons/SolidEllipsisV";
 import { SolidEnvelopeIcon } from "./icons/SolidEnvelope";
 import { SolidExclamationCircleIcon } from "./icons/SolidExclamationCircle";
 import { SolidExclamationTriangleIcon } from "./icons/SolidExclamationTriangle";
+import { SolidExpandIcon } from "./icons/SolidExpand";
+import { SolidExportIcon } from "./icons/SolidExport";
 import { SolidEyeLowVisionIcon } from "./icons/SolidEyeLowVision";
 import { SolidEyeOffIcon } from "./icons/SolidEyeOff";
 import { SolidEyeIcon } from "./icons/SolidEye";
@@ -45,19 +70,29 @@ import { SolidHistoryIcon } from "./icons/SolidHistory";
 import { SolidHomeIcon } from "./icons/SolidHome";
 import { SolidImageIcon } from "./icons/SolidImage";
 import { SolidImagesIcon } from "./icons/SolidImages";
+import { SolidImportIcon } from "./icons/SolidImport";
 import { SolidKeyIcon } from "./icons/SolidKey";
 import { SolidLineChartIcon } from "./icons/SolidLineChart";
 import { SolidLinkIcon } from "./icons/SolidLink";
+import { SolidListCheckIcon } from "./icons/SolidListCheck";
 import { SolidMagnifyingGlassIcon } from "./icons/SolidMagnifyingGlass";
+import { SolidMinusIcon } from "./icons/SolidMinus";
+import { SolidMoneyIcon } from "./icons/SolidMoney";
+import { SolidMoneysIcon } from "./icons/SolidMoneys";
+import { SolidMoneytIcon } from "./icons/SolidMoneyt";
 import { SolidPlusIcon } from "./icons/SolidPlus";
 import { SolidPowerOffIcon } from "./icons/SolidPowerOff";
 import { SolidQuestionCircleIcon } from "./icons/SolidQuestionCircle";
 import { SolidQuestionIcon } from "./icons/SolidQuestion";
+import { SolidReceiptIcon } from "./icons/SolidReceipt";
 import { SolidRefreshIcon } from "./icons/SolidRefresh";
+import { SolidReportIcon } from "./icons/SolidReport";
 import { SolidRotateIcon } from "./icons/SolidRotate";
 import { SolidSackDollarIcon } from "./icons/SolidSackDollar";
 import { SolidSaveIcon } from "./icons/SolidSave";
 import { SolidSearchIcon } from "./icons/SolidSearch";
+import { SolidSidebarIcon } from "./icons/SolidSidebar";
+import { SolidSigninIcon } from "./icons/SolidSignin";
 import { SolidSlidersIcon } from "./icons/SolidSliders";
 import { SolidSortAscIcon } from "./icons/SolidSortAsc";
 import { SolidSortDescIcon } from "./icons/SolidSortDesc";
@@ -67,10 +102,14 @@ import { SolidStarIcon } from "./icons/SolidStar";
 import { SolidStoreIcon } from "./icons/SolidStore";
 import { SolidTimesIcon } from "./icons/SolidTimes";
 import { SolidTrashIcon } from "./icons/SolidTrash";
+import { SolidTruckIcon } from "./icons/SolidTruck";
 import { SolidUserCircleIcon } from "./icons/SolidUserCircle";
 import { SolidUserCogIcon } from "./icons/SolidUserCog";
 import { SolidUserEditIcon } from "./icons/SolidUserEdit";
 import { SolidUserIcon } from "./icons/SolidUser";
+import { SolidUsersContainerIcon } from "./icons/SolidUsersContainer";
+import { SolidUsersIcon } from "./icons/SolidUsers";
+import { SolidWarehouseIcon } from "./icons/SolidWarehouse";
 import { SolidWrenchIcon } from "./icons/SolidWrench";
 
 export const iconRegistry = {
@@ -79,31 +118,56 @@ export const iconRegistry = {
   "brands/instagram": BrandsInstagramIcon,
   "brands/linkedin": BrandsLinkedinIcon,
   "brands/npm": BrandsNpmIcon,
+  "outline/bookmark": OutlineBookmarkIcon,
+  "outline/cart": OutlineCartIcon,
+  "outline/minus-circle": OutlineMinusCircleIcon,
+  "outline/plus-circle": OutlinePlusCircleIcon,
+  "outline/store": OutlineStoreIcon,
+  "outline/truck": OutlineTruckIcon,
+  "outline/warehouse": OutlineWarehouseIcon,
   "solid/arrow-down-z-a": SolidArrowDownZAIcon,
   "solid/arrow-left": SolidArrowLeftIcon,
   "solid/arrow-right-long": SolidArrowRightLongIcon,
   "solid/arrow-right": SolidArrowRightIcon,
   "solid/arrow-up-a-z": SolidArrowUpAZIcon,
+  "solid/ban": SolidBanIcon,
   "solid/bars": SolidBarsIcon,
   "solid/bell": SolidBellIcon,
   "solid/bookmark": SolidBookmarkIcon,
   "solid/box-archive": SolidBoxArchiveIcon,
+  "solid/box-down": SolidBoxDownIcon,
+  "solid/box-up": SolidBoxUpIcon,
+  "solid/boxes": SolidBoxesIcon,
+  "solid/calendar-dots": SolidCalendarDotsIcon,
+  "solid/calendar": SolidCalendarIcon,
+  "solid/cart": SolidCartIcon,
+  "solid/cashier": SolidCashierIcon,
+  "solid/cc": SolidCcIcon,
+  "solid/chart": SolidChartIcon,
+  "solid/chartd": SolidChartdIcon,
+  "solid/chartp": SolidChartpIcon,
   "solid/check": SolidCheckIcon,
+  "solid/checks": SolidChecksIcon,
   "solid/chevron-down": SolidChevronDownIcon,
   "solid/chevron-left": SolidChevronLeftIcon,
   "solid/chevron-right": SolidChevronRightIcon,
   "solid/chevron-up": SolidChevronUpIcon,
+  "solid/clipboard-check": SolidClipboardCheckIcon,
   "solid/clipboard": SolidClipboardIcon,
   "solid/cog": SolidCogIcon,
   "solid/copy": SolidCopyIcon,
   "solid/crosshairs": SolidCrosshairsIcon,
   "solid/dollar": SolidDollarIcon,
+  "solid/dots": SolidDotsIcon,
+  "solid/dotsv": SolidDotsvIcon,
   "solid/edit": SolidEditIcon,
   "solid/ellipsis-h": SolidEllipsisHIcon,
   "solid/ellipsis-v": SolidEllipsisVIcon,
   "solid/envelope": SolidEnvelopeIcon,
   "solid/exclamation-circle": SolidExclamationCircleIcon,
   "solid/exclamation-triangle": SolidExclamationTriangleIcon,
+  "solid/expand": SolidExpandIcon,
+  "solid/export": SolidExportIcon,
   "solid/eye-low-vision": SolidEyeLowVisionIcon,
   "solid/eye-off": SolidEyeOffIcon,
   "solid/eye": SolidEyeIcon,
@@ -118,19 +182,29 @@ export const iconRegistry = {
   "solid/home": SolidHomeIcon,
   "solid/image": SolidImageIcon,
   "solid/images": SolidImagesIcon,
+  "solid/import": SolidImportIcon,
   "solid/key": SolidKeyIcon,
   "solid/line-chart": SolidLineChartIcon,
   "solid/link": SolidLinkIcon,
+  "solid/list-check": SolidListCheckIcon,
   "solid/magnifying-glass": SolidMagnifyingGlassIcon,
+  "solid/minus": SolidMinusIcon,
+  "solid/money": SolidMoneyIcon,
+  "solid/moneys": SolidMoneysIcon,
+  "solid/moneyt": SolidMoneytIcon,
   "solid/plus": SolidPlusIcon,
   "solid/power-off": SolidPowerOffIcon,
   "solid/question-circle": SolidQuestionCircleIcon,
   "solid/question": SolidQuestionIcon,
+  "solid/receipt": SolidReceiptIcon,
   "solid/refresh": SolidRefreshIcon,
+  "solid/report": SolidReportIcon,
   "solid/rotate": SolidRotateIcon,
   "solid/sack-dollar": SolidSackDollarIcon,
   "solid/save": SolidSaveIcon,
   "solid/search": SolidSearchIcon,
+  "solid/sidebar": SolidSidebarIcon,
+  "solid/signin": SolidSigninIcon,
   "solid/sliders": SolidSlidersIcon,
   "solid/sort-asc": SolidSortAscIcon,
   "solid/sort-desc": SolidSortDescIcon,
@@ -140,10 +214,14 @@ export const iconRegistry = {
   "solid/store": SolidStoreIcon,
   "solid/times": SolidTimesIcon,
   "solid/trash": SolidTrashIcon,
+  "solid/truck": SolidTruckIcon,
   "solid/user-circle": SolidUserCircleIcon,
   "solid/user-cog": SolidUserCogIcon,
   "solid/user-edit": SolidUserEditIcon,
   "solid/user": SolidUserIcon,
+  "solid/users-container": SolidUsersContainerIcon,
+  "solid/users": SolidUsersIcon,
+  "solid/warehouse": SolidWarehouseIcon,
   "solid/wrench": SolidWrenchIcon,
 } as const;
 
